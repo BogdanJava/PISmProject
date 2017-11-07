@@ -9,9 +9,6 @@ public class CarGenerator {
 
     private static CarGenerator carGenerator;
 
-    private CarGenerator(int i){
-    }
-
     public CarGenerator(){
     }
 

@@ -1,4 +1,4 @@
-package main.java.cargenerator;
+package cargenerator;
 
 public enum CarModel {
     OPEL, HONDA, MAZDA;

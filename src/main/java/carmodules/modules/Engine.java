@@ -1,4 +1,4 @@
-package main.java.carmodules.modules;
+package carmodules.modules;
 
 public interface Engine {
     void insertEngine();

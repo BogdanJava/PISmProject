@@ -1,6 +1,6 @@
-package main.java.cardetails;
+package cardetails;
 
-import main.java.carmodules.modules.Engine;
+import carmodules.modules.Engine;
 
 public class OpenEngine implements Engine {
     @Override

@@ -1,4 +1,4 @@
-package main.java.cargarage;
+package cargarage;
 
 public class Garage {
     private CarWithinGarage carWithinGarage;

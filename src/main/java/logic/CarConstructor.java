@@ -1,11 +1,11 @@
-package main.java.logic;
+package logic;
 
-import main.java.cargarage.CarWithinGarage;
-import main.java.cargarage.Garage;
-import main.java.cargarage.GarageManager;
-import main.java.cargenerator.CarGenerator;
-import main.java.cargenerator.CarModel;
-import main.java.cars.Car;
+import cargarage.CarWithinGarage;
+import cargarage.Garage;
+import cargarage.GarageManager;
+import cargenerator.CarGenerator;
+import cargenerator.CarModel;
+import cars.Car;
 
 import java.util.ArrayList;
 

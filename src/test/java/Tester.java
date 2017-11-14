@@ -1,14 +1,12 @@
-package test.java;
-
-import main.java.caractions.ActionManager;
-import main.java.caractions.CarAction;
-import main.java.cardetails.HondaBody;
-import main.java.cardetails.OpelBody;
-import main.java.cargarage.Garage;
-import main.java.cargarage.GarageManager;
-import main.java.cargenerator.CarGenerator;
-import main.java.cargenerator.CarModel;
-import main.java.cars.Car;
+import caractions.ActionManager;
+import caractions.CarAction;
+import cardetails.HondaBody;
+import cardetails.OpelBody;
+import cargarage.Garage;
+import cargarage.GarageManager;
+import cargenerator.CarGenerator;
+import cargenerator.CarModel;
+import cars.Car;
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -21,7 +19,7 @@ import static junit.framework.TestCase.fail;
 public class Tester {
 
     @Test
-    public void testTemplateMethod(){
+    public void testFactory(){
         CarGenerator carGenerator = CarGenerator.getInstance();
         Car car1 = carGenerator.getCar(CarModel.OPEL);
         Assert.assertNotNull(car1);
@@ -29,7 +27,7 @@ public class Tester {
         Assert.assertNotNull(car2);
         Car car3 = carGenerator.getCar(CarModel.MAZDA); // MAZDA constant presents, but there's no
         // appropriate class created yet.
-        //Assert.assertNotNull(car3); //uncomment to get assertion fail
+        Assert.assertNotNull(car3); //uncomment to get assertion fail
     }
 
     @Test
@@ -45,7 +43,7 @@ public class Tester {
             Object object3 = constructorClass.newInstance();
             Assert.assertTrue(object3 instanceof CarGenerator);
             CarGenerator cg3 = (CarGenerator) object3;
-            // Assert.assertEquals(cg1, cg3); // uncomment to get assertion fail
+            Assert.assertEquals(cg1, cg3); // uncomment to get assertion fail
         } catch (InstantiationException | IllegalAccessException |
                 NoSuchMethodException e) {
             e.printStackTrace();
@@ -62,7 +60,7 @@ public class Tester {
         Assert.assertNotNull(action2);
         String action2result = action2.doAction("Mazda");
 
-        Assert.assertNotEquals(action1result, action2result);
+        Assert.assertNotSame(action1result, action2result);
 
         CarAction action3 = ActionManager.getActionByName("noSuchAction"); // there's no
                                                                                       //such action stored

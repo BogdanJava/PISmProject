@@ -1,4 +1,4 @@
-package main.java.caractions;
+package caractions;
 
 public class ExplodeAction implements CarAction {
     @Override

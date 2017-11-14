@@ -1,6 +1,6 @@
-package main.java.cardetails;
+package cardetails;
 
-import main.java.carmodules.modules.Wheel;
+import carmodules.modules.Wheel;
 
 public class HondaWheel implements Wheel{
 

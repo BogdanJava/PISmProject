@@ -1,6 +1,6 @@
-package main.java.cardetails;
+package cardetails;
 
-import main.java.carmodules.modules.Body;
+import carmodules.modules.Body;
 
 public class HondaBody implements Body{
     public static final int WHEEL_NUMBER = 4;

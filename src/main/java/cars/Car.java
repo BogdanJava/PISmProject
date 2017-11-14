@@ -1,8 +1,8 @@
-package main.java.cars;
+package cars;
 
-import main.java.carmodules.modules.Body;
-import main.java.carmodules.modules.Engine;
-import main.java.carmodules.modules.Wheel;
+import carmodules.modules.Body;
+import carmodules.modules.Engine;
+import carmodules.modules.Wheel;
 
 public abstract class Car {
 

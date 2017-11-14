@@ -1,4 +1,4 @@
-package main.java.caractions;
+package caractions;
 
 public class DriveAction implements CarAction {
     @Override

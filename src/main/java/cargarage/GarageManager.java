@@ -1,6 +1,6 @@
-package main.java.cargarage;
+package cargarage;
 
-import main.java.cars.Car;
+import cars.Car;
 
 public class GarageManager {
     private Car car;

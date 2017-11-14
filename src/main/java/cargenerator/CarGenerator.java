@@ -1,15 +1,15 @@
-package main.java.cargenerator;
+package cargenerator;
 
-import main.java.cardetails.*;
-import main.java.cars.Car;
-import main.java.cars.Honda;
-import main.java.cars.Opel;
+import cardetails.*;
+import cars.Car;
+import cars.Honda;
+import cars.Opel;
 
 public class CarGenerator {
 
     private static CarGenerator carGenerator;
 
-    public CarGenerator(){
+    private CarGenerator(){
     }
 
     public static CarGenerator getInstance(){

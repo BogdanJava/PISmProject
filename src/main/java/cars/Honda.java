@@ -1,9 +1,9 @@
-package main.java.cars;
+package cars;
 
-import main.java.caractions.ActionManager;
-import main.java.carmodules.modules.Body;
-import main.java.carmodules.modules.Engine;
-import main.java.carmodules.modules.Wheel;
+import caractions.ActionManager;
+import carmodules.modules.Body;
+import carmodules.modules.Engine;
+import carmodules.modules.Wheel;
 
 public class Honda extends Car {
 

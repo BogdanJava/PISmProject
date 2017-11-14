@@ -1,4 +1,4 @@
-package main.java.caractions;
+package caractions;
 
 import java.util.HashMap;
 import java.util.Map;

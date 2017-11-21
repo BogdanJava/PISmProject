@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pismproject" default="all">
+
+  <property name="buildFolder" value="out"/>
+  <property name="jarPath" value="${buildFolder}/jars/${ant.project.name}.jar"/>
+
+  <target name="clean" description="Clean up project">
+    <delete dir="${buildFolder}"/>
+  </target>
+  <target name="mkdirs" description="Make output directory" depends="clean">
+    <mkdir dir="${buildFolder}"/>
+    <mkdir dir="${buildFolder}/classes"/>
+    <mkdir dir="${buildFolder}/jars"/>
+  </target>
+  <target name="compile" description="Compile all java files" depends="mkdirs">
+    <javac destdir="out/classes" srcdir="src/main/java">
+    </javac>
+  </target>
+  <target name="install" description="Make jar files" depends="compile">
+    <jar destfile="${buildFolder}/jars/${ant.project.name}.jar">
+      <fileset dir="${buildFolder}/classes">
+        <include name="**/*.class"/>
+        <exclude name="**/CVS"/>
+      </fileset>
+      <manifest>
+        <attribute name="Main-Class" value="logic/CarConstructor"/>
+      </manifest>
+    </jar>
+  </target>
+  <target name="run" description="Run app" depends="install">
+    <java jar="${jarPath}" fork="true"/>
+  </target>
+  <target name="run-only" description="Run app">
+    <java jar="${jarPath}" fork="true"/>
+  </target>
+  <target name="all" description="Do smth" depends="run">
+    <echo>Building something</echo>
+  </target>
+</project>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="xmlparser.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Lab7 main page</title>
+</head>
+<body>
+
+    <form class="form-style-10">
+        <input id="xmlButton" type="button" onclick="showXml()" value="Показать"/>
+        <label>Показать xml</label>
+        <input id="changeDigitsButton" type="button" onclick="changeDigits()" value="Заменить"/>
+        <label>Заменить цифры на слова</label>
+    </form>
+
+    <table id="xmlTable" class="responstable">
+        <thead>
+            <tr>
+                <td>Номер</td>
+                <td>Студент</td>
+                <td>Оценка</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+</body>
+</html>

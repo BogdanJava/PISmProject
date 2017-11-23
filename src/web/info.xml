@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gradeReport xmlns="http://www.w3schools.com/kek"
+             xmlns:xs="http://www.w3.org/2001/XMLSchema"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.w3schools.com/kek gradeReport.xsd"
+             id="120851">
+    <date>2002-10-06</date>
+    <subject>Computer Science Fundamentals</subject>
+    <examiner>prof.Litvinov</examiner>
+    <gradeList>
+        <gradeRecord>
+            <student>Ivanov</student>
+            <grade>4</grade>
+        </gradeRecord>
+        <gradeRecord>
+            <student>Petrov</student>
+            <grade>3</grade>
+        </gradeRecord>
+        <gradeRecord>
+            <student>Sidorov</student>
+            <grade>5</grade>
+        </gradeRecord>
+    </gradeList>
+</gradeReport>

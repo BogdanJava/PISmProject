@@ -58,24 +58,19 @@ function showXml(){
 
 function changeDigits() {
     var table = document.getElementById("tableBody");
-    var xml = loadXMLDoc(xmlFileName);
-    var nodes = xml.getElementsByTagName("gradeReport")[0].getElementsByTagName("gradeList")[0]
-        .getElementsByTagName("gradeRecord");
-
-    for(var i=0; i<nodes.length; i++) {
-        var node = nodes.item(i);
-        var gradeCell = table.getElementsByTagName("td")[i];
-        var grade = node.childNodes[1];
-
-        document.write("hui");
-
-        switch (grade){
-            case "1": grade.nodeValue = "Один"; break;
-            case "2": grade.nodeValue = "Два"; break;
-            case "3": grade.nodeValue = "Три"; break;
-            case "4": grade.nodeValue = "Четыре"; break;
-            case "5": grade.nodeValue = "Пять"; break;
-        }
-    }
+    var rows = table.getElementsByTagName('tr');
+	
+	for(var i=0; i<rows.length; i++){
+		var columns = rows[i].getElementsByTagName('td');
+		var digit = columns[2].innerText;
+		switch(Number(digit)){
+			case 1: digit = "one"; break;
+			case 2: digit = "two"; break;
+			case 3: digit = "three"; break;
+			case 4: digit = "four"; break;
+			case 5: digit = "five"; break;
+		}
+		columns[2].innerHTML = digit;		
+	}
 
 }
